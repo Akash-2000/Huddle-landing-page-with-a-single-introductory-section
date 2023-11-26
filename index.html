@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-GLhlTQ8iKt6UjHLSF+/N/+w6D5P62/lFvE1xJVRnQq4tZtiqM9tus5F/GsPF3L" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html {
+     padding: 0;
+     margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      background-image: url( './images/bg-desktop.svg' );
+      background-color: hsl(257, 40%, 49%);
+      height: 100vh; /* 100% of the viewport height */
+    }
+
+    .top{
+      flex: 0.3;
+      background-image: url('./images/logo.svg');
+      height: 150px;
+      background-repeat: no-repeat;
+      margin-left: 45px;
+      margin-top: 50px;
+    }
+     .bottom {
+      flex: 0.3; /* Occupy 1/3 of the available space */
+       /* Optional: Add background color for visualization */
+    }
+
+    .middle {
+      flex: 2;
+      display: flex;
+      flex-direction:row;
+      justify-content:center /* Occupy 2/3 of the available space */
+       /* Optional: Add background color for visualization */
+    }
+    .firstmainContent{
+      background-image: url('./images/illustration-mockups.svg');
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size:contain;
+      width: 700px;
+      margin: 0px 50px;
+     
+      position: static;
+      justify-content: center;
+      align-items: center;
+     
+    }
+    .buttontext{
+      padding: 15px;
+      color:white"
+    }
+    .mainText{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: white;
+     
+      right:0;
+    }
+    .paraText{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: white;
+      letter-spacing: 1px;
+      line-height: 1.7;
+    }
+    .ButtonText{ /* Adjust padding as needed */
+      background-color: violet; /* Set the background color of the button */
+      color: #fff; /* Set the text color of the button */
+      border: none; /* Remove the button border for a cleaner look */
+      cursor: pointer; /* Change the cursor to a pointer on hover */
+      transition: box-shadow 0.3s ease; /* Add a smooth transition effect for the box-shadow */
+      width: 30%;
+      border-radius: 50px;
+      text-align: center;
+      /* Define the initial box-shadow (no shadow) */
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+
+    }
+    .ButtonText:hover{
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    }
+    .secondmainContent{
+    
+      width: 600px;
+      height: 500px;
+
+    }
+  .container1 {
+  white-space: nowrap; /* Prevents the containers from wrapping to the next line */
+}
+
+.mainBottom{
+ 
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5% ;
+
+}
+.iconStyle{
+  width: 50px;
+  height: 50px;
+  margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% ;
+  border: 1px solid white;
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+      transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.iconStyle:hover{
+  box-shadow: 0 0 10px rgba(255, 0, 247, 0.456);
+  border: 1px solid violet;
+}
+.iconStyle2{
+  width: 50px;
+  height: 50px;
+  margin-right: 2%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% ;
+  border: 1px solid white;
+}
+.iconStyle2:hover{
+  box-shadow: 0 0 10px rgba(255, 0, 247, 0.456);
+  border: 1px solid violet;
+}
+.iconStyle1{
+  width: 50px;
+  height: 50px;
+  margin-right: 2%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% ;
+  border: 1px solid white;
+}
+.iconStyle1:hover{
+  box-shadow: 0 0 10px rgba(255, 0, 247, 0.456);
+  border: 1px solid violet;
+}
+.fa-facebook-f,.fa-x-twitter,.fa-whatsapp{
+  color: white;
+}
+.iconStyle2:hover .fa-whatsapp{
+  color: violet;
+}
+.iconStyle1:hover .fa-x-twitter {
+  color: violet;
+}
+.iconStyle:hover .fa-facebook-f{
+  color: violet;
+}
+.box {
+  display: inline-block;
+  width: 200px; /* You can adjust the width as needed */
+  border: 1px solid black; /* Optional: Add a border for better visibility */
+  /* Optional: Add some spacing between the divs */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles for small screens (phones) go here */
+    html, body {
+            height: 100%;
+            margin: 0;
+            background-color: hsl(257, 40%, 49%);
+           
+        }
+
+    .top{
+      flex: 1;
+      margin-left: 0px;
+      margin-top: 0px;
+      background-image: none;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size:contain;
+      margin-left: 10%;
+     
+      
+    }
+    .secondmainContent{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+    }
+    .top1{
+      flex: 0.3;
+      
+      background-image: url('./images/logo.svg');
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position:center;
+      height:100px;width:30%;
+      
+    }
+    .paraText{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 100;
+      font-size:small;
+      color: white;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+      width: 80%;
+     
+      line-height: 1.7;
+    }
+
+        .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh; /* 100% of the viewport height */
+      background-image: url('./images/bg-mobile.svg');
+    }
+
+    .firstmainContent{
+     background-image: url('./images/illustration-mockups.svg'); 
+      height: 200px;;
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: 50% 50%; 
+      width: 85%;
+      margin: 0px;
+     
+      
+     
+    }
+    .buttontext{
+      color:   black;
+    }
+    .mainText{
+      font-family: 'Poppins',sans-serif;
+      font-weight: 600;
+      display: flex;
+      font-size:larger;
+      
+      justify-content: center;
+    }
+    .mainBottom{
+ 
+ display: flex;
+ justify-content:center;
+ margin-right:0;
+
+}
+.ButtonText{ /* Adjust padding as needed */
+      background-color: white; /* Set the background color of the button */
+       /* Set the text color of the button */
+      border: none; /* Remove the button border for a cleaner look */
+      cursor: pointer; /* Change the cursor to a pointer on hover */
+      transition: box-shadow 0.3s ease; /* Add a smooth transition effect for the box-shadow */
+      
+      border-radius: 50px;
+      justify-content: center;
+      text-align: center;
+      /* Define the initial box-shadow (no shadow) */
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+
+    }
+    .paraText1{
+     
+      display: flex;
+      justify-content: center;
+      
+    }
+   
+    .centerit{
+      display: flex;
+      justify-content: center;
+    }
+
+        .middle{
+            flex-direction:column;
+            display: flex ;
+            justify-content: center;
+        }
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="top">
+       <div class="top1"></div>
+    </div>
+    <div class="middle">
+      <div class="firstmainContent"> 
+      </div>
+      <div class="secondmainContent">
+        <div class="mainText">
+          <h1  class="mainText">Build The Communnity<br>
+          Your Fans will Love</h1>
+  
+        </div>
+        <div class="paraText1">
+            <p class="paraText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, excepturi nesciunt. Nobis deleniti sit unde velit, saepe esse facere, nisi autem eos sed quas nemo numquam qui voluptas quis nesciunt.</p>
+        </div>
+        <div class="centerit">
+            <p class="buttontext  ButtonText">Register</p>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+        <div class="mainBottom">
+          <div class="iconStyle">
+            <i class="fa-brands fa-facebook-f fa-xl"></i>
+          </div>
+          <div class="iconStyle1">
+            <i class="fa-brands fa-x-twitter fa-xl"></i>
+          </div>
+          <div class="iconStyle2">
+            <i class="fa-brands fa-whatsapp fa-xl"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+
+ 
+</body>
+</html>
